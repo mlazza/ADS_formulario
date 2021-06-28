@@ -44,55 +44,55 @@
 <body>
     <div class="container">
         <form name="cadastro" method="POST" action="" id="formulario" name="formulario">
-        <h1>FORMULÁRIO DE CADASTRO</h1>
-        
-        <div class="input-group">
-            <label for="nome">NOME</label> <br />
-            <input type="text" id="nome" name="nome" placeholder="Insira seu nome"/>
-        </div>
-        <div class="input-group">
-            <label for="sobrenome">SOBRENOME</label> <br />
-            <input type="text" id="sobrenome" placeholder="Insira seu sobrenome"/>
-        </div>
-        <div class="input-group">
-            <label for="email">E-MAIL</label> <br />
-            <input type="email" id="email" onblur="validacaoEmail(cadastro.email)" placeholder="Insira seu e-mail"/>
-            <div id="msgemail"></div>
-        </div>
-        <div class="input-group">
-            <label for="senha">SENHA</label> <br />
-            <input type="password" id="senha" placeholder="Insira a senha" />
-        </div>
-        <div class="colunas">
+            <h1>FORMULÁRIO DE CADASTRO</h1>
+            
             <div class="input-group">
-            <label for="telefone">TELEFONE</label> <br />
-            <input type="text" id="telefone" onblur="validaFone(cadastro.telefone)"  placeholder="Insira seu Telefone"/>
+                <label for="nome">NOME</label> <br />
+                <input type="text" id="nome" name="nome" placeholder="Insira seu nome"/>
             </div>
             <div class="input-group">
-            <label for="cep">CEP</label> <br />
-            <input type="text" id="cep" placeholder="Insira seu CEP" />
+                <label for="sobrenome">SOBRENOME</label> <br />
+                <input type="text" id="sobrenome" placeholder="Insira seu sobrenome"/>
             </div>
-        </div>
-        <div class="colunas">
             <div class="input-group">
-            <label for="sexo">SEXO</label>
-            <select name="sexo" id="sexo">
-                <option value="">Escolha</option>
-                <option value="m">Masculino</option>
-                <option value="f">Feminino</option>
-                <option value="x">Não informar</option>
-            </select>
+                <label for="email">E-MAIL</label> <br />
+                <input type="email" id="email" onblur="validacaoEmail(cadastro.email)" placeholder="Insira seu e-mail"/>
+                <div id="msgemail"></div>
+            </div>
+            <div class="input-group">
+                <label for="senha">SENHA</label> <br />
+                <input type="password" id="senha" placeholder="Insira a senha" />
+            </div>
+            <div class="colunas">
+                <div class="input-group">
+                <label for="telefone">TELEFONE</label> <br />
+                <input type="text" id="telefone" onblur="validaFone(cadastro.telefone)"  placeholder="Insira seu Telefone"/>
+                </div>
+                <div class="input-group">
+                <label for="cep">CEP</label> <br />
+                <input type="text" id="cep" placeholder="Insira seu CEP" />
+                </div>
+            </div>
+            <div class="colunas">
+                <div class="input-group">
+                <label for="sexo">SEXO</label>
+                <select name="sexo" id="sexo">
+                    <option value="">Escolha</option>
+                    <option value="m">Masculino</option>
+                    <option value="f">Feminino</option>
+                    <option value="x">Não informar</option>
+                </select>
+                </div>
+                
+            </div>
+            <div class="footer">
+                <button type="button" class="botao" onclick="validar()">
+                    Enviar
+                </button>
             </div>
             
-        </div>
-        <div class="footer">
-            <button type="button" class="botao" onclick="validar()">
-            Enviar
-            </button>
-        </div>
         
-        
-    </form>
+        </form>
     </div>
     <script src="script.js"></script>
 </body>
